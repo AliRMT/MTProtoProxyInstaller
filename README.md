@@ -11,7 +11,7 @@ A very small script to install MTProtoProxy On Centos or Ubuntu
 * Revoke and add secrets after install
 * Supports Centos 7/8 or Ubuntu 18 or later and Debian 10 or later
 * Automatically configure NTP
-* API Support [[Reference](https://github.com/HirbodBehnam/AliRMT/wiki/API-For-Python-Script)]
+* API Support [[Reference](https://github.com/AliRMT/AliRMT/wiki/API-For-Python-Script)]
 ## Official Or Python Proxy?
 Use python if:
 1. Your server's CPU has one core or you want to run proxy on one core.
@@ -28,7 +28,7 @@ Official proxy can serve about 10000 to 16000 connections per core.
 ## Python Script
 ### COMPATIBILITY NOTE
 **Current Python script does not support Centos any more.**
-You can get the latest version which supports it from [here](https://raw.githubusercontent.com/HirbodBehnam/AliRMT/4dfad402915ee612332a171c919dcd90132de643/MTProtoProxyInstall.sh).
+You can get the latest version which supports it from [here](https://raw.githubusercontent.com/AliRMT/4dfad402915ee612332a171c919dcd90132de643/MTProtoProxyInstall.sh).
 ### Install
 On your server run
 ```bash
@@ -45,7 +45,7 @@ To manually config, proxy edit config.py in /opt/mtprotoproxy to change the conf
 ##### Quota Limiter
 Python version of the proxy has the ability to limit the users by the traffic they use. You can change the quota by re-running the script after the installation. But remember that if you restart the proxy, all of the usages will reset. (They start counting from 0 again.)
 
-Therefore, if you want user management you can use this [program](https://github.com/HirbodBehnam/PortForwarder)
+Therefore, if you want user management you can use this [program](https://github.com/AliRMT/PortForwarder)
 ##### Hot Reload:
 Hot reload reloads the config file without restarting the service. It can be useful if you have set some quota limits.
 
@@ -57,7 +57,7 @@ pid=${arrPID[1]}
 kill -USR2 "$pid"
 ```
 ### API
-This script gives you post-install API support to control the proxy. [More Info](https://github.com/HirbodBehnam/AliRMT/wiki/API-For-Python-Script)
+This script gives you post-install API support to control the proxy. [More Info](https://github.com/AliRMT/wiki/API-For-Python-Script)
 ## Official Script
 ### Install
 On your server run
@@ -126,14 +126,14 @@ Add dd prefix to secret (cafe...babe => ddcafe...babe) to enable this mode on cl
 ### Fake TLS
 Fake TLS is a method that makes the proxy traffic look like TLS (something like websites traffic). In order to make your clients use it you have to share the specific link with them. The script will print it at the end. Fake-TLS links begins with `ee`.
 ### Quota Managment
-I've written a small program in golang([link](https://github.com/HirbodBehnam/PortForwarder)) to forward traffic with quota managment. I've also written a guide [here](https://github.com/HirbodBehnam/AliRMT/wiki/Quota-Management-For-Server) in order to configure it with MTProto. Right now it also supports the limiting the amount of _connections_ per port. [Persian Guide](http://rizy.ir/limitUsers)
+I've written a small program in golang([link](https://github.com/AliRMT/PortForwarder)) to forward traffic with quota managment. I've also written a guide [here](https://github.com/AliRMT/wiki/Quota-Management-For-Server) in order to configure it with MTProto. Right now it also supports the limiting the amount of _connections_ per port. [Persian Guide](http://rizy.ir/limitUsers)
 ### How to install on Windows?
-I've written a small guide to install that on Windows. Please read [wiki](https://github.com/HirbodBehnam/AliRMT/wiki) for more info.
+I've written a small guide to install that on Windows. Please read [wiki](https://github.com/AliRMT/wiki) for more info.
 ### Server
 You can use any VPS or Dedicated Server. If you want a cheap and low-end server, I personally recommend to buy one at [Virmach](https://virmach.com/); They also accept cryptos!
 
 #### Persian guide to buying servers, installing script, FAQ and QoS
-***I DO NOT USE MTPROTO PROXY MYSELF.*** You can also use [shadowsocks with Cloak](https://github.com/HirbodBehnam/Shadowsocks-Cloak-Installer)(**Highly Recommended** and I use it myself) or [wireguard](https://github.com/l-n-s/wireguard-install) or [openvpn](https://github.com/angristan/openvpn-install) instead.
+***I DO NOT USE MTPROTO PROXY MYSELF.*** You can also use [shadowsocks with Cloak](https://github.com/AliRMT/Shadowsocks-Cloak-Installer)(**Highly Recommended** and I use it myself) or [wireguard](https://github.com/l-n-s/wireguard-install) or [openvpn](https://github.com/angristan/openvpn-install) instead.
 
 (If you are from Iran, you may need to open this link with VPN)
 
