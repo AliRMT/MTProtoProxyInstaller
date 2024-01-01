@@ -11,7 +11,7 @@ A very small script to install MTProtoProxy On Centos or Ubuntu
 * Revoke and add secrets after install
 * Supports Centos 7/8 or Ubuntu 18 or later and Debian 10 or later
 * Automatically configure NTP
-* API Support [[Reference](https://github.com/AliRMT/AliRMT/wiki/API-For-Python-Script)]
+* API Support [[Reference](https://github.com/AliRMT/wiki/API-For-Python-Script)]
 ## Official Or Python Proxy?
 Use python if:
 1. Your server's CPU has one core or you want to run proxy on one core.
